@@ -6,8 +6,11 @@
 
 	--bg-color: hsl(210, 86%, 10%);
 	--bg-color-15: hsl(210, 86%, 15%);
+	--bg-color-20: hsl(210, 86%, 20%);
+
 	--primary-color: hsl(0, 0%, 80%);
 	--primary-color-50: hsl(0, 0%, 50%);
+
 	--second-color: hsl(82, 88%, 74%);
 }
 
@@ -43,6 +46,16 @@ main.cards {
 	padding: 1rem;
 	background-color: var(--bg-color-15);
 }
+
+.card:hover {
+	background-color: var(--bg-color-15);
+}
+
+.card a {
+	all: unset;
+}
+
+
 
 .card > h3 {
 	color: white;
