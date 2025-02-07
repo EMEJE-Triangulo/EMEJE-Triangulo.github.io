@@ -34,7 +34,7 @@ h2 > span {
 
 /* WORKSHOP */
 
-main.cards {
+.cards {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
