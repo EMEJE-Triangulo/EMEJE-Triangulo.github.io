@@ -1,10 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+	/* --main-font-family: "Montserrat", serif; */
+	--main-font-family: "Raleway", serif;
+
+	--bg-color: hsl(210, 86%, 10%);
+	--bg-color-15: hsl(210, 86%, 15%);
+	--primary-color: hsl(0, 0%, 80%);
+	--primary-color-50: hsl(0, 0%, 50%);
+	--second-color: hsl(82, 88%, 74%);
+}
+
 body {
-	font-family: "Montserrat", serif;
+	font-family: var(--main-font-family);
+	background-color: var(--bg-color);
+	color: var(--primary-color);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 
-body {
-	font-family: "Raleway", serif;
+h2 > span {
+	padding: 0 2rem;
+}
+
+
+
+/* WORKSHOP */
+
+main.workshops {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.workshop {
+	max-width: 40rem;
+	margin: 1rem;
+	padding: 1rem;
+	background-color: var(--bg-color-15);
+}
+
+.workshop > h3 {
+	color: white;
+	margin-top: .5rem;
+	margin-bottom: 0;
+}
+
+.workshop > .autor {
+	color: var(--primary-color-50);
+	margin: .5rem 0;
+}
+
+.workshop > .desc {
+	font-style: italic;
+
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+.workshop > .desc:hover {
+	font-style: italic;
+	display: block;
+	overflow: auto;
 }
