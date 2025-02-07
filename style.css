@@ -26,6 +26,10 @@ body {
 }
 
 
+h2 {
+	max-width: initial;
+}
+
 h2 > span {
 	padding: 0 2rem;
 }
