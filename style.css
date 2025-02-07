@@ -81,8 +81,16 @@ h2 > span {
 	overflow: hidden;
 }
 
+.card > .desc > p {
+	margin-top: 0;
+}
+
 .card > .desc:hover {
 	font-style: italic;
 	display: block;
 	overflow: auto;
+}
+
+.card .icon {
+	margin-right: 1rem;
 }
