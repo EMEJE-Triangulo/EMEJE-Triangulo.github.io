@@ -25,19 +25,21 @@ body {
 	align-items: center;
 }
 
-
-h2 {
-	max-width: initial;
+body > h2:first-of-type {
+	padding-top: initial;
 }
 
 h2 > span {
 	padding: 0 2rem;
 }
 
+h2 {
+	max-width: initial;
+}
 
 /* MAIN */
 
-p {
+p, ol, ul, li {
 	font-size: large;
 }
 
@@ -49,7 +51,8 @@ p {
 }
 
 .social > a {
-	all: unset;
+	/* all: unset; */
+	text-decoration: none;
 }
 
 .social > img {
@@ -78,7 +81,8 @@ p {
 }
 
 .card a {
-	all: unset;
+	/* all: unset; */
+	text-decoration: none;
 }
 
 .card p {
