@@ -35,6 +35,28 @@ h2 > span {
 }
 
 
+/* MAIN */
+
+p {
+	font-size: large;
+}
+
+.social {
+	font-size: larger;
+	max-width: fit-content;
+	padding: .8rem 1rem;
+	background-color: var(--bg-color-15);
+}
+
+.social > a {
+	all: unset;
+}
+
+.social > img {
+	transform: translateY(0.45rem);
+	width: 1.5rem;
+	padding-right: .4rem;
+}
 
 /* WORKSHOP */
 
@@ -59,7 +81,9 @@ h2 > span {
 	all: unset;
 }
 
-
+.card p {
+	font-size: initial;
+}
 
 .card > h3 {
 	color: white;
