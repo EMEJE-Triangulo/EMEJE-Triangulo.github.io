@@ -25,9 +25,26 @@
 			padding-top: 4rem;
 		}
 
+	
+		.pix-box {
+			display: grid;
+			grid-template-columns: auto 20rem;
+		}
+
 		#qr-code-pix {
-			width: 16rem;
-			margin: 0 2rem;
+			max-width: 100%;
+			margin-left: 2rem;
+		}
+
+		.pix p code {
+			padding: .5em;
+			background-color: var(--bg-color-15);
+		}
+
+		.pix-copia-cola {
+			max-width: 77ch;
+			padding: 1em;
+			background-color: var(--bg-color-15);
 		}
 	</style>
 </head>
@@ -62,7 +79,7 @@
 
 		<h4>Valores</h4>
 		<p><em>Na inscrição, está incluso alimentação dentro do evento.</em></p>
-	
+
 		<ul>
 			<li>Crianças de 0 à 3 anos: <b>Gratuito</b></li>
 			<li>Crianças de 3 à 10 anos: <b>R$ 45,00</b></li>
@@ -73,7 +90,7 @@
 		<!-- ##################################################################### -->
 		<h2 id="preparativos">Inscrições: preparativos</h2>
 		<p>Antes de fazer a inscrição de cada pessoa, há 2 coisas que podem ser preparadas</p>
-		
+
 		<h4>Selecione uma foto de rosto</h4>
 		<p>Na pré-inscrição, é necessária uma foto que tenha o rosto da pessoa.
 			Não precisa ser um 3x4, mas uma foto na montanha a 3 km de distância também não rola.
@@ -86,7 +103,7 @@
 
 		<p>Crianças com até 10 anos não precisam desse passo pois o workshop deles é o
 			EMEJINHO, a evangelização do EMEJE.</p>
-		
+
 		<p>A distribuição dos workshops será feita por ordem de inscrição. Será levado em
 			consideração a primeira escolha da lista. Se a primeira escolha já estiver lotada,
 			usamos a segunda, terceira e demais escolhas para alocar da melhor forma possível.
@@ -113,7 +130,7 @@
 		<p>Tudo bem. Esse número é para ajudar a secretaria na conciliação manual de centenas de
 			inscrição. Mas dá pra fazer sem ele também, desde que a pré-inscrição esteja feita
 			corretamente.</p>
-		
+
 		<p>Neste caso, ao informar o pagamento, indicar dados que facilitem a achar os registos de
 			pré-inscrição, como:
 		</p>
@@ -139,9 +156,8 @@
 
 		<p><strong>O pagamento de várias inscrições pode ser feito em conjunto.</strong>
 			Se você fizer inscrição de 3 pessoas adultas por exemplo, faça um pagamento de R$ 210 ao
-			invés de 3 pagamentos separados de R$ 70. 
+			invés de 3 pagamentos separados de R$ 70.
 		</p>
-
 
 
 
@@ -150,28 +166,29 @@
 			para a secretária via Email, WhatsApp ou Telegram.
 		</p>
 
-		
-		<div style="display: flex;">
-			<div>
-				<h5>Chave PIX</h5>
-				<p>Usar a chave <code>094.158.026-18</code> ou o QR Code de PIX Copia e Cola ao lado.
-				Em celulares, pode somente clicar na imagem do QRCode que já deve funcionar.</p>
 
-				<h5>Envio do comprovante</h5>
-				<p>Enviar o comprovante para a secretaria (aos cuidados de Sarah Leles) pelo email
-					<a href="mailto:emejetriangulo.mg@gmail.com">emejetriangulo.mg@gmail.com</a>, ou pelo
-					WhatsApp <a target="_blank" href="https://wa.me/5534992266853">(34) 99226-6853</a>.</p>
-				<p>Ao enviar o conprovante, passar os códigos / chaves informadas na pré-inscrição de cada
-					pessoa. Dúvidas, <a href="#sem-codigo">clique aqui</a>.</p>
+		<div class="pix-box">
+				<div class="pix">
+					<h5>Chave PIX</h5>
+					<p>Usar a chave <code>094.158.026-18</code>, o QR Code de PIX ao lado ou a chave de
+						PIX Copia e Cola
+					</p>
+					<div class="pix-copia-cola">
+						<code>00020126360014br.gov.bcb.pix0114+55349922668535204000053039865802BR5925SARAH ETHELVINA FERREIRA 6014PATOS DE MINAS62070503***6304C0E5</code>
+					</div>
 
-			</div>
+					<h5>Envio do comprovante</h5>
+					<p>Enviar o comprovante para a secretaria (aos cuidados de Sarah Leles) pelo email
+						<a href="mailto:emejetriangulo.mg@gmail.com">emejetriangulo.mg@gmail.com</a>, ou pelo
+						WhatsApp <a target="_blank" href="https://wa.me/5534992266853">(34) 99226-6853</a>.</p>
+					<p>Ao enviar o conprovante, passar os códigos / chaves informadas na pré-inscrição de cada
+						pessoa. Dúvidas, <a href="#sem-codigo">clique aqui</a>.</p>
+				</div>
 
-			<a href="00020126360014br.gov.bcb.pix0114+55349922668535204000053039865802BR5925SARAH ETHELVINA FERREIRA 6014PATOS DE MINAS62070503***6304C0E5">
-				<img id="qr-code-pix" src="assets/qr-code-pix-sarah.jpg" alt="QR Code PIX">
-			</a>
+			<img id="qr-code-pix" src="assets/qr-code-pix-sarah.jpg" alt="QR Code PIX">
 		</div>
 
-			
+
 		<h4 id="sympla">Sympla</h4>
 
 		<p>O Sympla tem uma taxa de serviço de 10%, mas permite o pagamento via boleto,
@@ -179,7 +196,7 @@
 			Apple Pay, Pix, Google Pay, Nupay e Click to Pay</p>
 
 		<p>Para isso, vá até a página deste evento no Sympla</p>
-	
+
 		<div class="card"><a target="_blank" href="">Evento no Sympla</a></div>
 
 		<p>Selecione a quantidade de ingressos necessários. Ex: 2 adultos e 1 criança.
