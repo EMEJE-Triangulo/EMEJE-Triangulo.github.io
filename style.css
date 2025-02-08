@@ -7,6 +7,9 @@
 	--bg-color: hsl(210, 86%, 10%);
 	--bg-color-15: hsl(210, 86%, 15%);
 	--bg-color-20: hsl(210, 86%, 20%);
+	--bg-second-color: hsl(82, 88%, 10%);
+	--bg-second-color-15: hsl(82, 88%, 15%);
+	--bg-second-color-20: hsl(82, 88%, 20%);
 
 	--primary-color: hsl(0, 0%, 80%);
 	--primary-color-50: hsl(0, 0%, 50%);
@@ -89,8 +92,16 @@ p, ol, ul, li {
 	background-color: var(--bg-color-15);
 }
 
+.card-alt {
+	background-color: var(--bg-second-color) !important;
+}
+
 .card:hover {
 	background-color: var(--bg-color-15);
+}
+
+.card-alt:hover {
+	background-color: var(--bg-second-color-15) !important;
 }
 
 .card a {
