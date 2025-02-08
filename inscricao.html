@@ -7,11 +7,28 @@
 
 	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="style.css">
+
+	<style>
+		h2::before {
+		content:" ";
+		display: block;
+		height: 1px;
+		background: var(--primary-color);
+		transform: translateY(-2rem);
+		}
+
+		body > h2:first-of-type:before {
+			display: none;
+		}
+
+		h2 {
+			padding-top: 4rem;
+		}
+	</style>
 </head>
 <body>
+
 	<h2>Como Fazer Inscrições <span>|</span> XVII EMEJE Triângulo <span>|</span> 2025 </h2>
-
-
 
 	<main>
 		<p><strong>As inscrições desse ano tiveram algumas pequenas alterações em relação aos anos
@@ -43,7 +60,7 @@
 			<li>Pessoas a partir de 10 anos: <b>R$ 70,00</b></li>
 		</ul>
 
-		<h2>Inscrições: preparativos</h2>
+		<h2 id="preparativos">Inscrições: preparativos</h2>
 		<p>Antes de fazer a inscrição de cada pessoa, há 2 coisas que podem ser preparadas</p>
 		
 		<h4>Selecione uma foto de rosto</h4>
@@ -72,7 +89,7 @@
 
 
 
-		<h2>Inscrições: Passo à Passo</h2>
+		<h2 id="passos">Inscrições: Passo à Passo</h2>
 
 		<p>Depois de preparado com a foto e as escolha das oficinas, continuemos.</p>
 
