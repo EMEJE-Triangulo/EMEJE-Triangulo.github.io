@@ -7,7 +7,15 @@
 
 	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="style.css">
+
+	<script>
+		function select(item) {
+			console.log(item);
+			item.classList.toggle("card-selected")
+		}
+	</script>
 </head>
+
 <body>
 	<h2>
 		Workshops
@@ -18,42 +26,42 @@
 	</h2>
 
 	<main class="cards workshops">
-		<div class="card workshop">
+		<div class="card workshop" onclick="select(this);">
 			<h3><span class="icon">👪</span>Viver (Re)nascendo</h3>
 			<p class="autor">Ana Cristina & Anna Karoliny</p>
 			<div class="desc">
 				Este Workshop é direcionado principalmente aos participantes que têm a oportunidade e/ou a responsabilidade de cuidar de outras pessoas, sendo <strong>mãe, pai, cuidador, professor</strong> ou que ainda pretenda ser. É um convite para voltar o olhar sobre a existência e sua função na (re)encarnação, sobre a importância da escuta, do acolhimento do outro e de si mesmo, refletindo sobre a possibilidade de nascermos e voltarmos a nascer, (às vezes) sempre necessária, ao longo da nossa existência e da nossa vida eterna.
 			</div>
 		</div>
-		<div class="card workshop">
+		<div class="card workshop" onclick="select(this);">
 			<h3><span class="icon">𐙚</span>Renascendo em Si</h3>
 			<p class="autor">Sheila & Lucas & Marília</p>
 			<div class="desc">
 				O objetivo deste workshop é construirmos com os participantes uma compreensão sobre reencarnação de forma leve, reflexiva e emocionante. Promovendo o despertar para a percepção da grande benção que é a oportunidade de estar aqui e agora. Buscando nos conectar com nossa criança interior e seguindo a partir de então mais conscientes de nossas ações e  pensamentos e da certeza de que somos nós quem criamos nossa realidade. Escrevendo assim uma nova história de um novo Ser que com coragem e  Fé, Renasce em Si sempre que necessário para seguir evoluindo com Jesus.
 			</div>
 		</div>
-		<div class="card workshop">
+		<div class="card workshop" onclick="select(this);">
 			<h3><span class="icon">🧭</span>Nascer de Novo: A Jornada de Transformação Interior</h3>
 			<p class="autor">Flor</p>
 			<div class="desc">
 				Assim como nascemos novamente a cada encarnação, podemos renascer a cada manhã, a cada vez que buscamos/decidimos realizar uma mudança em nós mesmos, a cada acontecimento ou momento que nos impõe a necessidade de um novo "eu" e em outras diversas oportunidades. Então eu te convido: Vamos buscar nascer de novo? Buscar uma renovação de carne, do coração e da mente, um abandono dos pontos que consideramos desafiadores e um novo começo na fé, junto a trilha de luz que nosso amado Mestre nos deixou.
 			</div>
 		</div>
-		<div class="card workshop">
+		<div class="card workshop" onclick="select(this);">
 			<h3><span class="icon">🌌</span>Star Wars</h3>
 			<p class="autor">Nickolas & Maju & Joice & Luana</p>
 			<div class="desc">
 				Workshop Star Wars: O Despertar da Força!  Que a força esteja com você meu caro gafanhoto! A força que te habita é o Deus Vivo! Sabia que você é um altar através do qual Deus se expressa? Sabendo ou não, embarque conosco na jornada de se tornar um jedi (sith já somos através dos nossos defeitos), despertando seus potenciais divinos através de missões altamente secretas na galáxia não tão distante do EMEJE.
 			</div>
 		</div>
-		<div class="card workshop">
+		<div class="card workshop" onclick="select(this);">
 			<h3><span class="icon">🌀</span>Avatar: O Último Mestre do Ar</h3>
 			<p class="autor">Sarinha & Vívian</p>
 			<div class="desc">
 				Seja bem-vindo ao workshop Avatar: O Último Mestre do Ar. Assim como Aang se sentiu inseguro, cheio de responsabilidades e com desafios ao descobrir que era o Avatar, nós ao retornarmos ao plano terrestre nos perguntamos: "Nasci. E agora?". A jornada do Avatar, como mestre dos elementos, nos serve como um exemplo de como ver o reino de Deus ao nascer de novo. Então, junte-se ao nosso workshop e domine os 4 elementos necessários para ser um grande mestre que o auxiliará em sua jornada espiritual e pessoal.
 			</div>
 		</div>
-		<div class="card workshop">
+		<div class="card workshop" onclick="select(this);">
 			<h3><span class="icon">⚡︎</span>Harry Potter e a Jornada do Renascimento</h3>
 			<p class="autor">Paloma & Rafael</p>
 			<div class="desc">
@@ -69,14 +77,14 @@
 				<p>🌟 Vagas limitadas! Inscreva-se e venha descobrir seu próprio feitiço de renascimento!</p>
 			</div>
 		</div>
-		<div class="card workshop">
+		<div class="card workshop" onclick="select(this);">
 			<h3><span class="icon">🎸</span>Música</h3>
 			<p class="autor">Júlio & Públio (não o Lentulus)</p>
 			<div class="desc">
 				Entre acordes do além e letras que fluem como preces, almas entoam harmonias que o tempo não esquece. Cada nota, um sopro divino a tecer luz na matéria, na sinfonia do invisível, onde o amor é a primeira melodia.
 			</div>
 		</div>
-		<div class="card workshop">
+		<div class="card workshop" onclick="select(this);">
 			<h3><span class="icon">🎭</span>Teatro</h3>
 			<p class="autor">Allan & Jéssica</p>
 			<div class="desc">
@@ -84,5 +92,6 @@
 			</div>
 		</div>
 	</main>
+
 </body>
 </html>
