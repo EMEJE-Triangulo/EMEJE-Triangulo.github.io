@@ -23,6 +23,9 @@ body {
 }
 
 @media (width < 1080px) {
+	body {
+		padding: 0 2rem;
+	}
 }
 
 @media (width >= 1080px) {
