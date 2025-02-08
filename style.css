@@ -112,11 +112,15 @@ p, ol, ul, li {
 
 .card > .desc {
 	font-style: italic;
+}
 
-	display: -webkit-box;
-	-webkit-line-clamp: 4;
-	-webkit-box-orient: vertical;
-	overflow: hidden;
+@media (width >= 1440px) {
+	.card > .desc {
+		display: -webkit-box;
+		-webkit-line-clamp: 4;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+	}
 }
 
 .card > .desc > p {
