@@ -113,7 +113,7 @@ p, ol, ul, li {
 	margin-top: 0;
 }
 
-.card > .desc:hover {
+.card:hover > .desc, .card-selected > .desc {
 	font-style: italic;
 	display: block;
 	overflow: auto;
