@@ -11,20 +11,27 @@ h1,
 h2,
 h3 {
   line-height: 1.2;
-  max-width: 35ch;
 }
 
 h1 {
   font-size: 2.5rem;
+  padding-top: 2rem;
 }
 
 h2 {
   font-size: 2rem;
+  padding-top: 1.5rem;
 }
 
 h3 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
+  padding-top: 1.2rem;
 }
+
+h4 {
+  padding-top: 1rem;
+}
+
 
 /* More info: https://piccalil.li/quick-tip/limit-line-lengths-to-increase-readability/ */
 p,
@@ -44,7 +51,7 @@ dt {
 }
 
 li + li {
-  margin-top: 0.7rem;
+  padding-top: 0.7rem;
 }
 
 blockquote {
