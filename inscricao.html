@@ -28,7 +28,13 @@
 	
 		.pix-box {
 			display: grid;
-			grid-template-columns: auto 20rem;
+			grid-template-columns: auto;
+		}
+		
+		@media (width >= 700px) {
+			.pix-box {
+				grid-template-columns: auto 20rem;
+			}
 		}
 
 		#qr-code-pix {
@@ -41,8 +47,20 @@
 			background-color: var(--bg-color-15);
 		}
 
+		@media (width >= 700px) {
+			.pix-copia-cola {
+				max-width: 77ch;
+			}
+		}
+
+		@media (width < 700px) {
+			.pix-copia-cola {
+				max-width: 96vh;
+			}
+		}
+
+
 		.pix-copia-cola {
-			max-width: 77ch;
 			padding: 1em;
 			background-color: var(--bg-color-15);
 		}
