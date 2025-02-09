@@ -21,8 +21,8 @@ body {
 	font-family: var(--main-font-family);
 	background-color: var(--bg-color);
 	color: var(--primary-color);
-
-	
+	margin-top: 0;
+	padding-top: 0;
 }
 
 @media (width < 1080px) {
