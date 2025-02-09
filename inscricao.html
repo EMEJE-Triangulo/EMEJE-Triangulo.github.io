@@ -31,15 +31,38 @@
 			grid-template-columns: auto;
 		}
 		
-		@media (width >= 700px) {
+		@media (width >= 1000px) {
 			.pix-box {
 				grid-template-columns: auto 20rem;
 			}
+
+			#qr-code-pix {
+				max-width: 100%;
+				margin-left: 2rem;
+			}
+
+			.qr-code-pix-container {
+				grid-column: 2;
+				grid-row: 1;
+			}
+			.qr-code-pix-container > h5 {
+				display: none;
+			}
 		}
 
-		#qr-code-pix {
-			max-width: 100%;
-			margin-left: 2rem;
+		@media (width < 1000px) {
+			.qr-code-pix-container {
+				grid-row: 2;
+			}
+
+			#qr-code-pix {
+				max-width: 50%;
+				margin: 0 2rem;
+			}
+
+			h5 {
+				margin: 2rem;
+			}
 		}
 
 		.pix p code {
@@ -230,7 +253,9 @@
 					<div class="pix-copia-cola">
 						<code>00020126360014br.gov.bcb.pix0114+55349922668535204000053039865802BR5925SARAH ETHELVINA FERREIRA 6014PATOS DE MINAS62070503***6304C0E5</code>
 					</div>
+				</div>
 
+				<div class="pix">
 					<h4>Envio do comprovante</h4>
 					<p>Enviar o comprovante para a secretaria (aos cuidados de Sarah Leles) pelo email
 						<a href="mailto:emejetriangulo.mg@gmail.com">emejetriangulo.mg@gmail.com</a>, ou pelo
@@ -239,7 +264,10 @@
 						pessoa. Dúvidas, <a href="#sem-codigo">clique aqui</a>.</p>
 				</div>
 
-			<img id="qr-code-pix" src="assets/qr-code-pix-sarah.jpg" alt="QR Code PIX">
+			<div class="qr-code-pix-container">
+				<h5>PIX QR Code</h5>
+				<img id="qr-code-pix" src="assets/qr-code-pix-sarah.jpg" alt="QR Code PIX">
+			</div>
 		</div>
 
 
