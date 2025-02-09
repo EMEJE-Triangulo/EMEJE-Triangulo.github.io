@@ -62,6 +62,20 @@ h2 {
 }
 
 
+.notes .title {
+	font-weight: bold;
+	font-variant: small-caps;
+}
+.notes {
+	background-color: var(--bg-color-20);
+	padding: 1rem 2rem;
+	font-size: x-large;
+}
+
+.notes * {
+	font-size: x-large;
+}
+
 p, ol, ul, li {
 	font-size: large;
 }
