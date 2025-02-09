@@ -71,6 +71,7 @@ p, ol, ul, li {
 	max-width: fit-content;
 	padding: .8rem 1rem;
 	background-color: var(--bg-color-15);
+	display: flex;
 }
 
 .social > a {
@@ -79,9 +80,16 @@ p, ol, ul, li {
 }
 
 .social > img {
-	transform: translateY(0.45rem);
 	width: 1.5rem;
-	padding-right: .4rem;
+	padding-right: 1rem;
+}
+
+
+footer {
+	display: flex;
+	gap: 4rem;
+	justify-content: space-around;
+	align-content: center;
 }
 
 /* WORKSHOP */
