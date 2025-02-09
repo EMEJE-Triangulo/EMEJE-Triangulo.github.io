@@ -55,6 +55,13 @@ h2 {
 
 /* MAIN */
 
+#title > a {
+	display: flex;
+	gap: 3rem;
+	text-decoration: none;
+}
+
+
 p, ol, ul, li {
 	font-size: large;
 }
@@ -115,8 +122,16 @@ p, ol, ul, li {
 
 .card > h3 {
 	color: white;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+}
+
+.workshop > h3 {
+	color: white;
 	margin-top: .5rem;
 	margin-bottom: 0;
+	padding-top: inherit !important;
 }
 
 .card > .autor {
