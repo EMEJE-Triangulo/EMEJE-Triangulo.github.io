@@ -98,11 +98,11 @@ footer {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	gap: 2rem;
 }
 
 .card {
 	max-width: 40rem;
-	margin: 1rem;
 	padding: 1rem;
 	background-color: var(--bg-color-15);
 }
@@ -112,16 +112,21 @@ footer {
 }
 
 .card:hover {
-	background-color: var(--bg-color-15);
+	background-color: var(--bg-color-20);
 }
 
 .card-alt:hover {
 	background-color: var(--bg-second-color-20) !important;
 }
 
+.card:has(a) {
+	padding: 1.5rem 2rem;
+}
 .card a {
 	/* all: unset; */
 	text-decoration: none;
+	font-size: x-large;
+	font-variant: small-caps;
 }
 
 .card p {
