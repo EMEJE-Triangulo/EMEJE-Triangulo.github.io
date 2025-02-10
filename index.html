@@ -65,7 +65,14 @@
 	</footer>
 
 
-
+	<script>
+		let cards_links = document.querySelectorAll(".card > a");
+	
+		cards_links.forEach((a) => {
+			let card = a.parentElement;
+			card.onclick = () => a.click();
+		});
+		</script>
 
 </body>
 </html>
