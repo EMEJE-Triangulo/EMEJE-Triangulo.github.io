@@ -66,13 +66,19 @@
 
 
 	<script>
-		let cards_links = document.querySelectorAll(".card > a");
-	
+		let cards_links = document.querySelectorAll(".card > * > a");
+		let social_links = document.querySelectorAll(".social > a");
+
 		cards_links.forEach((a) => {
+			let card = a.parentElement.parentElement;
+			card.onclick = () => a.click();
+		});
+
+		social_links.forEach((a) => {
 			let card = a.parentElement;
 			card.onclick = () => a.click();
 		});
-		</script>
+	</script>
 
 </body>
 </html>
